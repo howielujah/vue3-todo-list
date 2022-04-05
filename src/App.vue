@@ -6,9 +6,7 @@ import TodoList from './components/TodoList.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <TodoList />
-  <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
 </template>
 
 <style>

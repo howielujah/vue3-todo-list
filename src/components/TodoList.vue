@@ -88,7 +88,7 @@ const uncompletedCounter = computed(() => {
             <a
               class="nav-link"
               href="#"
-              @click="visability = 'all'"
+              @click.prevent="visability = 'all'"
               :class="{ 'active': visability === 'all' }"
             >全部</a>
           </li>
@@ -96,7 +96,7 @@ const uncompletedCounter = computed(() => {
             <a
               class="nav-link"
               href="#"
-              @click="visability = 'active'"
+              @click.prevent="visability = 'active'"
               :class="{ 'active': visability === 'active' }"
             >進行中</a>
           </li>
@@ -104,7 +104,7 @@ const uncompletedCounter = computed(() => {
             <a
               class="nav-link"
               href="#"
-              @click="visability = 'completed'"
+              @click.prevent="visability = 'completed'"
               :class="{ 'active': visability === 'completed' }"
             >已完成</a>
           </li>
@@ -142,7 +142,7 @@ const uncompletedCounter = computed(() => {
       </ul>
       <div class="card-footer d-flex justify-content-between">
         <span>還有 {{ uncompletedCounter }} 筆任務未完成</span>
-        <a href="#" @click="clearAll">清除所有任務</a>
+        <a href="#" @click.prevent="clearAll">清除所有任務</a>
       </div>
     </div>
   </div>
